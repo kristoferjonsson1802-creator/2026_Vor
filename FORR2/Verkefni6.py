@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter.messagebox
 
 gluggi = Tk() 
-gluggi.title('Verkefni 1') 
+gluggi.title('Verkefni 6') 
 gluggi.geometry('450x300') 
 
 frame0 = Frame(gluggi)

@@ -1,0 +1,8 @@
+Hugmynd fyrir lokaverk í VEFFOR2
+-Ég ætla að gera verkefni þar sem maður getur skráð sig inn á vefsíðunna og annaðhvort fengið eða búið til ræktar plan sem er hæft
+fyrir notandan, þetta verður gert með spurningum sem notandin fær og svarar þannig að það er hægt að aðlaga planið fyrir notandan.
+Notandinn getur svo breytt og lagað sjálfur planninu ef það þarf. það verða myndir af æfingunum á síðunni ásamt útskýringar og 
+upplýsingar um þær.
+
+-Gagnagrunnurinnmun mun innihalda upplýsingar um notandan, allar æefingar sem eru hægt að gera í ræktinni, plannið hjá notandanum og
+mögulega einhverskonar framfarir hjá notendanum(veit ekki alveg um þetta :/)

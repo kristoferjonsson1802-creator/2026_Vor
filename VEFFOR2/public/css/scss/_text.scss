@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+h1, h2, h3 {
+  text-align: center;
+  color: $black;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}

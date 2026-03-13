@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= artist.title %> | Opium</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <%- include('partials/header') %>
+
+  <main class="artist-main">
+    <div class="artist-image">
+      <% if (artist.image) { %>
+        <img src="<%= artist.image %>" alt="<%= artist.title %>">
+      <% } %>
+    </div>
+
+    <div>
+      <h2><%= artist.title %></h2>
+
+      <p><%= artist.about || 'No information available.' %></p>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+</html>

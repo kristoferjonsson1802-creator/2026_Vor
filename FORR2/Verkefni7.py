@@ -120,7 +120,6 @@ p2_stig = StringVar()
 p2_stiginn = Entry(frame2, textvariable=p2_stig)
 p2_stiginn.pack(side=LEFT, padx=15)
 
-
 button1=Button(frame3, padx=20, pady=7, bd=8, fg='Black', text='Draga spil', command=p1_draw)
 button1.pack(side=LEFT, padx = 5)
 button1.config(height=1, width=2)

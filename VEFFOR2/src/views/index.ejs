@@ -11,25 +11,30 @@
   <%- include('partials/header') %>
 
   <main>
-    <h2>OPIUM <br>NOT A LABEL. A MOVEMENT.</h2>
-
+    
     <section class="text">
-        <p>Opium is a rap collective built around Playboi Carti and his vision. Dark sound, heavy energy, no rules.</p>
+      <h3>Artists</h3>
+
+      <div class="artist-grid">
+        <% artists.forEach(artist => { %>
+          <div class="artist-card">
+            <h3><%= artist.title %></h3>
+
+            <img src="<%= artist.image %>" alt="<%= artist.title %>">
+
+            <a class="link" href="/artist/<%= artist.id %>">
+              View artist
+            </a>
+          </div>
+        <% }) %>
+      </div>
     </section>
 
     <section class="text">
-        <h3>Artists</h3>
-        <p>
-            Playboi Carti <br>
-            Ken Carson <br>
-            Homixide Gabg <br>
-            Destroy Lonely <br>
-        </p>
-    </section>
-
-    <section class="text">
-        <h3>Link to their music</h3>
-        <a href="https://open.spotify.com/playlist/2e6efMiBY7WFnUTMyuDp14?si=a841badaa1924438" class="link">♱OPIUM♱</a>
+      <h3>Link to their music</h3>
+      <a href="https://open.spotify.com/playlist/2e6efMiBY7WFnUTMyuDp14?si=a841badaa1924438" class="link">
+        ♱OPIUM♱
+      </a>
     </section>
 
   </main>

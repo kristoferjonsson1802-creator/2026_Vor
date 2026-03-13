@@ -1,0 +1,26 @@
+@use '../variables' as *;
+
+header {
+  background-color: $black;
+  padding: $spacing;
+  text-align: center;
+  color: $white;
+  border-radius: $radius;
+
+  nav {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $white;
+    margin-right: 1rem;
+
+    &:hover {
+      font-size: 18px;
+    }
+  }
+
+  h1 {
+    color: $white;
+  }
+}

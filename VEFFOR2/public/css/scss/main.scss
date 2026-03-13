@@ -1,0 +1,73 @@
+@use 'variables';
+@use 'base/reset';
+@use 'text';
+
+@use 'components/header';
+@use 'components/footer';
+@use 'components/text-box';
+@use 'components/artist-card';
+
+body {
+  font-family: variables.$font-main;
+  background-color: variables.$bg-dark;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.artist-card {
+  background: #7c7c7c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.artist-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.artist-card:hover {
+  transform: scale(1.03);
+}
+
+.about-main {
+  background-color: #7c7c7c;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5cm;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.about-main img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.artist-main {
+  background-color: #7c7c7c;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5cm;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.artist-main img {
+  width: 300px;
+  border-radius: 10px;
+}

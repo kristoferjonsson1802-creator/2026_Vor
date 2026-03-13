@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.text {
+  background-color: $bg-light;
+  padding: 15px;
+  margin: 15px;
+  border-radius: $radius;
+  text-align: center;
+}
