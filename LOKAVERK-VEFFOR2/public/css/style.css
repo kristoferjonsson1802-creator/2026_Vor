@@ -1,3 +1,116 @@
-body {
-    background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: #df3a3a;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+header nav a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+header nav a:hover {
+  opacity: 0.7;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.FrontPage {
+  text-align: center;
+  padding: 4rem 0;
+}
+.FrontPage h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.FrontPage p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+.FrontPage .btn {
+  background: #df3a3a;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.FrontPage .btn:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+.card p {
+  color: #aaa;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+footer {
+  margin-top: 5.5rem;
+  padding: 1.5rem 0;
+  background: #111;
+  text-align: center;
+  color: #777;
+}
+
+/*# sourceMappingURL=style.css.map */

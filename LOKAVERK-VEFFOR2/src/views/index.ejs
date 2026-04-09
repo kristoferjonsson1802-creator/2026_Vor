@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout</title>
+    <title>Workout Planner</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
     <%- include('partials/header.ejs') %>
 
     <main>
-        <h3>pick ur poison</h3>
-        <p>PUSH DAY!!!!</p>
-        <p>pull day :)</p>
-        <p>leg day :(</p>
+        <section class="FrontPage">
+            <div class="container">
+                <h2>Build Your Perfect Workout Plan</h2>
+                <p>
+                    Answer a few questions and get a personalized gym plan tailored to your goals and needs.
+                </p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid">
+                <div class="card">
+                    <h3>Custom Plans</h3>
+                    <p>Create workout plans based on your fitness level and goals.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Exercise Library</h3>
+                    <p>Browse exercises with images and detailed explanations.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Track Progress</h3>
+                    <p>Monitor your improvements and stay consistent.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <%- include('partials/footer.ejs') %>
+
 </body>
 </html>
