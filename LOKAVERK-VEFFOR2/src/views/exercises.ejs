@@ -29,9 +29,14 @@
                     <div class="card-info">
                         <h4><%= exercise.name %></h4>
                         <p>
-                            Lengd:
-                            <%= exercise.duration_minutes %> mín
+                            Group:
+                            <%= exercise.muscle_group %> 
                         </p>
+
+                        <a href="/exercises/<%= exercise.id %>" style="color: #ff6b6b;font-weight: 600;text-decoration: none;
+                        display: inline-block; margin-top: 15px;">
+                        skoða nánar
+                        </a>
                     </div>
                 </div>
             <% }) %>
