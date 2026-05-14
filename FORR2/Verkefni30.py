@@ -9,7 +9,6 @@ pygame.display.set_caption("Verkefni 30")
 clock = pygame.time.Clock()
 FPS = 60
 
-
 mynd = pygame.image.load("cat.png")
 
 x = 0
