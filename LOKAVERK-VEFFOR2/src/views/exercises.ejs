@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner | exercises</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<%- include('partials/header.ejs') %>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h2>Exercises</h2>
+        <p>
+            Here you can see all of the exercises.
+        </p>
+    </div>
+</section>
+
+<section class="featured">
+    <h3>All exercises</h3>
+    <div class="card-grid">
+        <% if (exercises && exercises.length > 0) { %>
+            <% exercises.forEach(exercise => { %>
+                <div class="exercise-card">
+                    <div class="card-img placeholder-img"></div>
+                    <div class="card-info">
+                        <h4><%= exercise.name %></h4>
+                        <p>
+                            Lengd:
+                            <%= exercise.duration_minutes %> mín
+                        </p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <div class="exercise-card">
+                <div class="card-info">
+                    <h4>Engar æfingar fundust</h4>
+                    <p>
+                        Bættu æfingum í gagnagrunninn.
+                    </p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</section>
+
+<%- include('partials/footer.ejs') %>
+
+</body>
+</html>
